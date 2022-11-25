@@ -3,8 +3,9 @@
 export default function CalculatorButton(props) {
     return (
         <button
+
         className={props.className}
-        onClick={()=>props.setValue(props.value + Math.random())}
+        onClick={props.onClick}
         value={props.value}
         >
         {props.value}
